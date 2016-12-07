@@ -1,0 +1,40 @@
+<script>
+//  Игра в загадки.
+//  a. Загадать загадку. Если ответ верен – поздравить пользователя. Затем сообщить, что
+//  игра окончена.
+//  b. Если ответ неверный – написать пользователю, что он не угадал.
+//  c. Добавить еще 3 загадки. Подсчитать количество правильных ответов, сообщить
+//  пользователю.
+
+    var answ1="один";
+    var answ2="два";
+    var answ3="три";
+    var answ4="четыре";
+    var answcount=0;
+    
+    var answ=prompt("Угадай загадку 1");
+    if (answ==answ1) {
+            answcount=answcount+1;
+            alert ("Верно");
+        } else alert ("Неверно");
+
+    answ=prompt("Угадай загадку 2");
+    if (answ==answ2) {
+            answcount=answcount+1;
+            alert ("Верно");
+        } else alert ("Неверно");
+
+    answ=prompt("Угадай загадку 3");
+    if (answ==answ3) {
+            answcount=answcount+1;
+            alert ("Верно");
+        } else alert ("Неверно");
+
+    answ=prompt("Угадай загадку 4");
+    if (answ==answ4) {
+            answcount=answcount+1;
+            alert ("Верно");
+        } else alert ("Неверно");
+
+    alert("Вы угадали "+answcount+" загадки");
+</script>
