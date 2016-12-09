@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Интернет-Магазин Programm Seller</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault();
+  });
+    
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
+
+});
+
+</script>
+         <!-- шапка -->
+      <header>
+        <!-- navigation, навигация -->
+        <nav>
+          <!-- unordered list, неупорядоченный список, маркированный список -->
+          <ul id="ddmenu">
+            <!-- list item, элемент списка -->
+            <li><a href="#">Меню</a>
+            <ul>
+            	<li><a href="index.html">Главная</a></li>
+            	<li><a href="contacts.html">Контакты</a></li>
+            	<li><a href="about.html">О нас</a></li>
+            	<li><a href="calculator.html">Калькулятор</a></li>
+            	<li><a href=""></a></li>
+            </ul>
+          </ul>
+        </nav>
+      </header>
+</body>
+</html>
