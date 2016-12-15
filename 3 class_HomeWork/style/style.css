@@ -178,6 +178,7 @@ nav a:hover {
 }
 .hide + label ~ div{
     display: none;
+    font-size: 16pt;
 }
 /* оформляем текст label */
 .hide + label {
