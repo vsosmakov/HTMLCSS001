@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Интернет-Магазин Programm Seller</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../style/button.css">
+  <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault(a);
+  });
+    
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
+
+});
+
+</script>
+  <script type="text/javascript">
+    function isClick() {
+      var a = 'Урааа, вы нажали на кнопку! И как вы новые кнопки? И какие правки внести что бы меню изначально было закрыто?';
+      alert(a);
+    }
+    </script>
+      <script type="text/javascript">
+    function isBuy() {
+      var a = 'На данный момент функция не активна!';
+      alert(a);
+    }
+    </script>
+       <br>  <!-- шапка -->
+      <header>
+       <img src="../img/logo.png">
+       </header>
+        <!-- navigation, навигация -->
+        <br>
+        <nav>
+          <!-- unordered list, неупорядоченный список, маркированный список -->
+          <ul id="ddmenu">
+            <!-- list item, элемент списка -->
+            <li><a href="#">Меню</a>
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="../contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="#">Калькулятор(В разработке)</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <div class="wrapper">
+        <div class="content">
+        <h1>Вы находитесь на странице товара.</h1>
+        <h3>LeEco Le 2</h3>
+        <br>
+        <br>
+        <div class="items1">
+        <figure>
+        <img src="../img/item3.jpg" title="Nexus 6P">
+        <figcaption class="bbd">
+        14 990 руб.
+        <br>
+        <input type="button" value="Купить" onclick="isBuy()"></figcaption>
+        </figure>
+        <div class="container">
+        <div class="main-right">
+        <article>
+            <input type="checkbox" id="hd-1" class="hide"/>
+            <label for="hd-1" >Описание</label>
+            <div>
+              ①Высокая производительность и быстрая обработка графики
+              <br>
+              <br>
+              ②Новая технология для безупречного звучания
+              <br>
+              <br>
+              ③Качественное изображение по умолчанию
+              <br>
+              <br>
+              ④Обновлённый фирменный дизайн
+              <br>
+              <br>
+              ⑤Умный сканер отпечатка пальца
+              <br>
+              <br>
+              ⑥Создан для удачных кадров
+              <br>
+              <br>
+              ⑦Связь нового поколения
+            </div>
+            <br>
+            <br>
+            <input type="checkbox" id="hd-2" class="hide"/>
+            <label for="hd-2" >Характеристики</label>
+            <div>
+              ①Аудиосистема стандарта CDLA
+              <br>
+              <br>
+              ②Процессор Qualcomm Snapdragon 652
+              <br>
+              <br>
+              ③Две камеры 16 МП и 8 МП
+              <br>
+              <br>
+              ④Толщина 8 мм, металл. Экран 5,5"
+              <br>
+              <br>
+              ⑤3 ГБ RAM
+              <br>
+              <br>
+              ⑥Технология LeTouch
+              <br>
+              <br>
+              ⑦Технология Le SuperCharge
+            </div>
+            <br>
+            <br>
+            <input type="checkbox" id="hd-3" class="hide"/>
+            <label for="hd-3" >Видео-Трейлер</label>
+            <div>
+            <iframe width="540" height="315" src="https://www.youtube.com/embed/cmvNjCOERkA" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </article>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="footer">
+           <form action="">
+    <p>  <input type="button" value="SuperSecretButton" onclick="isClick()"> </p>
+   </form>
+          <nav>
+          <!-- unordered list, неупорядоченный список, маркированный -->
+          <ul>
+            <!-- list item, элемент списка -->
+            <ul>
+              <li><a href="../index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="../contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="#">Калькулятор(В разработке)</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <p class="copy">&copy Все права Защищены! (Назиманов Малик)</p>
+        </div>
+        </div>
+</body>
+</html>

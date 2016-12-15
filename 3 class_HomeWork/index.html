@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Интернет-Магазин Programm Seller</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/button.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('a').on('click', function(e){
+    e.preventDefault(a);
+  });
+    
+  $('#ddmenu li').hover(function () {
+     clearTimeout($.data(this,'timer'));
+     $('ul',this).stop(true,true).slideDown(200);
+  }, function () {
+    $.data(this,'timer', setTimeout($.proxy(function() {
+      $('ul',this).stop(true,true).slideUp(200);
+    }, this), 100));
+  });
+
+});
+
+</script>
+  <script type="text/javascript">
+    function isClick() {
+      var a = 'Урааа, вы нажали на кнопку! Какие правки внести что бы меню изначально было закрыто?';
+      alert(a);
+    }
+   </script>
+      <script type="text/javascript">
+    function isClickBtn() {
+          window.location.href = "items/item1.html"
+    }
+    </script>
+          <script type="text/javascript">
+    function isClickBtnTwo() {
+          window.location.href = "items/item2.html"
+    }
+    </script>
+       <br>  <!-- шапка -->
+      <header>
+       <img src="img/logo.png">
+       </header>
+        <!-- navigation, навигация -->
+        <br>
+        <nav>
+          <!-- unordered list, неупорядоченный список, маркированный список -->
+          <ul id="ddmenu">
+            <!-- list item, элемент списка -->
+            <li><a href="#">Меню</a>
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="#">Калькулятор(В разработке)</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <div class="wrapper">
+        <div class="content">
+        <h1>Добро пожаловать в Магазин Programm Seller!</h1>
+        <h3>На данный момент бы можем предложить следующие 2 товара!</h3>
+        <br>
+        <br>
+        <div class="item">
+        <figure><img src="img/item.jpg" title="Nexus 6P">
+        <figcaption>Качественный! <br>Стильный! Производительный!<br> Всё что нужно для истенного фаната Android!<br> <input type="button" value="Подробнее" onclick="isClickBtn()"></figcaption></figure>
+        </div>
+        <div class="item2">
+            <figure><img src="img/item3.jpg" title="LeEco Le 2">
+            <figcaption>Стильный дизайн, Отличная камера, Высокая произваодительность! <br> Этот телефон Создан победжать!<br>
+            <input type="button" value="Подробнее" onclick="isClickBtnTwo()"></figcaption></figure>
+        </div>
+        <div class="footer">
+           <form action="">
+    <p>  <input type="button" value="SuperSecretButton" onclick="isClick()"> </p>
+   </form>
+          <nav>
+          <!-- unordered list, неупорядоченный список, маркированный -->
+          <ul>
+            <!-- list item, элемент списка -->
+            <ul>
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Каталог(В разработке)</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+              <li><a href="#">О нас(В разработке)</a></li>
+              <li><a href="#">Калькулятор(В разработке)</a></li>
+            </ul>
+          </ul>
+        </nav>
+        <p class="copy">&copy Все права Защищены! (Назиманов Малик)</p>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
